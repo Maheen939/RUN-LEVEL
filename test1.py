@@ -6,7 +6,7 @@ from agents.run import RunConfig
 gemini_api_key = "AIzaSyDKOKL1CHtUhjZpsfuIbYdu11U4FhuW5jI"
 
 if not gemini_api_key:
-    raise ValueError("🚨 Missing GEMINI_API_KEY. Set it as an environment variable.")
+    raise ValueError(" Missing GEMINI_API_KEY. Set it as an environment variable.")
 
 # Initialize Gemini client (OpenAI-compatible)
 external_client = AsyncOpenAI(
@@ -43,4 +43,4 @@ try:
     print(result.final_output)
 
 except Exception as e:
-    print(f"❌ Error occurred: {e}")
+    print(f"Error occurred: {e}")
